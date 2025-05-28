@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+          <link rel="stylesheet" type="text/css" href="style.css" />
+          <title>Frontend Mentor | Interactive rating component</title>
+     </head>
+     <body>
+          <main class="main-content-container">
+               <div class="rating-state" id="rating-state">
+                    <!-- Rating state start -->
+
+                    <div class="circle-container">
+                         <img src="images/icon-star.svg" alt="orange star" class="orange-star" />
+                    </div>
+                    <h1 class="how-we-do-head">How did we do?</h1>
+
+                    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    <form id="rating">
+                         <div class="radio-container">
+                              <input type="radio" id="rating-button-1" name="rating" value="1" />
+                              <label for="rating-button-1">1</label>
+                         </div>
+                         <div class="radio-container">
+                              <input type="radio" id="rating-button-2" name="rating" value="2" />
+                              <label for="rating-button-2">2</label>
+                         </div>
+                         <div class="radio-container">
+                              <input type="radio" id="rating-button-3" name="rating" value="3" />
+                              <label for="rating-button-3">3</label>
+                         </div>
+                         <div class="radio-container">
+                              <input type="radio" id="rating-button-4" name="rating" value="4" />
+                              <label for="rating-button-4">4</label>
+                         </div>
+                         <div class="radio-container">
+                              <input type="radio" id="rating-button-5" name="rating" value="5" />
+                              <label for="rating-button-5">5</label>
+                         </div>
+                    </form>
+                    <button type="submit" form="rating">Submit</button>
+                    <!-- Rating state end -->
+               </div>
+               <!-- Thank you state start -->
+               <div class="thank-you-state hidden" id="thank-you-state">
+                    <div class="thank-you-image"><img /></div>
+                    <div class="rating-selection-section">
+                         You selected
+                         <div id="selected-rating-value"><!-- Add rating here --></div>
+                         out of 5
+                    </div>
+                    <h2 class="thank-you">Thank you</h2>
+                    <div class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</div>
+               </div>
+          </main>
+     </body>
+</html>

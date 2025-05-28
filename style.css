@@ -1,0 +1,84 @@
+.overpass-font {
+     font-family: "Overpass", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400, 700;
+     font-style: normal;
+}
+
+:root {
+     --grey-500: hsl(217, 12%, 63%);
+     --grey-900: hsl(213, 19%, 18%);
+     --grey-950: hsl(216, 12%, 8%);
+     --orange-500: hsl(25, 97%, 53%);
+}
+
+html,
+body {
+     background-color: black;
+     color: var(--grey-500);
+     font-family: "Overpass", sans-serif;
+     font-weight: 400;
+}
+.main-content-container {
+     background-color: var(--grey-950);
+     border-radius: 15px;
+     width: 35rem;
+     height: 30rem;
+}
+
+#rating {
+     display: flex;
+     justify-items: space-between;
+}
+
+input[type="radio"] {
+     position: absolute;
+     width: 0;
+     height: 0;
+     overflow: hidden;
+     opacity: 0;
+}
+
+label {
+     background-color: var(--grey-900);
+     color: var(--grey-500);
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: all 0.2 ease-in-out;
+     user-select: none;
+}
+
+label:hover {
+     background-color: white;
+     color: var(--grey-950);
+}
+
+input[type="radio"]:checked + label {
+     background-color: var(--orange-500);
+     color: white;
+}
+
+.circle-container {
+     background-color: var(--grey-900);
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.hidden {
+     display: none;
+}
+
+@media (max-width: 600px) {
+}
+
+@media (min-width: 600px) {
+}
