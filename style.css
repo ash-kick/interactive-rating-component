@@ -18,17 +18,49 @@ body {
      color: var(--grey-500);
      font-family: "Overpass", sans-serif;
      font-weight: 400;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100%;
 }
 .main-content-container {
      background-color: var(--grey-950);
      border-radius: 15px;
-     width: 35rem;
-     height: 30rem;
+     width: 23rem;
+     height: 25rem;
+     display: flex;
+     align-self: center;
+     padding: 2rem;
+}
+
+h1 {
+     padding: 0;
+     margin: 0;
+     color: white;
+}
+
+p {
+     line-height: 1.5rem;
+     padding: 0;
+     margin: 0;
+}
+
+.rating-state {
+     height: 100%;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
 }
 
 #rating {
      display: flex;
      justify-items: space-between;
+}
+
+form {
+     display: flex;
+     justify-content: space-between;
 }
 
 input[type="radio"] {
@@ -43,8 +75,8 @@ label {
      background-color: var(--grey-900);
      color: var(--grey-500);
      border-radius: 50%;
-     width: 40px;
-     height: 40px;
+     width: 50px;
+     height: 50px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -73,12 +105,57 @@ input[type="radio"]:checked + label {
      justify-content: center;
 }
 
+button {
+     background-color: var(--orange-500);
+     border: none;
+     border-radius: 3rem;
+     text-transform: uppercase;
+     width: 100%;
+     height: 10%;
+}
+
+button:hover {
+     background-color: white;
+     cursor: pointer;
+     transition: all 0.2 ease-in-out;
+}
+
 .hidden {
      display: none;
 }
 
-@media (max-width: 600px) {
+.thank-you-state:not(.hidden) {
+     display: flex;
 }
 
-@media (min-width: 600px) {
+.thank-you-state {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+}
+
+h2 {
+     color: white;
+}
+
+.appreciation {
+     line-height: 1.5rem;
+     text-align: center;
+}
+
+.rating-selection-section {
+     color: var(--orange-500);
+     display: flex;
+     background-color: var(--grey-900);
+     border-radius: 15px;
+     width: 12rem;
+     height: 1.75rem;
+     align-items: center;
+     justify-content: center;
+}
+
+#selected-rating-value {
+     display: inline;
+     margin: 0 0.25rem;
 }
